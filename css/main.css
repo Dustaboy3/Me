@@ -195,6 +195,13 @@ body>section,
   background-size: cover;
 }
 
+.bg-image {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .carousel-caption {
   top: 50%;
 }
