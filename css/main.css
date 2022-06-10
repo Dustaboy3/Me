@@ -45,7 +45,7 @@ a:hover {
 
 a:focus,
 a:hover {
-  color: #6CB670;
+  color: #6a737b;
 }
 
 h1,
@@ -73,7 +73,7 @@ h6 {
 }
 
 span.color {
-  color: #0feb9e;
+  color: #6a737b;
 }
 
 body>section,
@@ -84,7 +84,7 @@ body>section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #0eb493;
+  color: #6a737b;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -176,7 +176,7 @@ body>section,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
   background-color: transparent;
-  border-top: 1px solid #32B0EE;
+  border-top: 2px solid #32B0EE;
   color: #fff;
 }
 
@@ -211,7 +211,7 @@ body>section,
 .carousel-caption h3 {
   font-size: 48px;
   font-weight: 300;
-  margin: 6px 0 20px;
+
 }
 
 .carousel-caption p {
@@ -222,7 +222,7 @@ body>section,
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-  color: #0feb9e;
+  color: #6a737b;
   content: "___";
   position: relative;
   top: -8px;
@@ -310,9 +310,9 @@ body>section,
 }
 
 .service-icon {
-  border: 1px solid #0eb493;
+  border: 1px solid #6a737b;
   border-radius: 50%;
-  color: #0eb493;
+  color: #6a737b;
   float: left;
   padding: 10px 13px;
 }
@@ -357,7 +357,7 @@ body>section,
 
 .work-filter ul li a:hover,
 .work-filter ul li a.active {
-  background-color: #0eb493;
+  background-color: #6a737b;
   border-radius: 6px;
   color: #fff;
   padding: 5px 17px;
@@ -380,7 +380,7 @@ body>section,
 }
 
 .overlay {
-  background-color: rgba(14, 180, 147, .9);
+  background-color: rgba(106, 115, 123, .9);
   text-align: center;
   position: absolute;
   left: 0;
