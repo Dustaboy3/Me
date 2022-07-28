@@ -48,7 +48,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         'use strict',
-        $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height', slideHeight);
+            $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height', slideHeight);
     });
 
 

@@ -7,7 +7,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 21px;
   font-size: 13px;
-  color: #6a737b;
+  color: #0077b3;
 }
 
 ol,
@@ -45,7 +45,7 @@ a:hover {
 
 a:focus,
 a:hover {
-  color: #6a737b;
+  color: #0077b3;
 }
 
 h1,
@@ -73,7 +73,7 @@ h6 {
 }
 
 span.color {
-  color: #6a737b;
+  color: #0077b3;
 }
 
 body>section,
@@ -84,7 +84,7 @@ body>section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #6a737b;
+  color: #0077b3;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -130,7 +130,7 @@ body>section,
 }
 
 #preloader {
-  background-color: #fff;
+  background-color: #000;
   height: 100%;
   position: fixed;
   width: 100%;
@@ -138,11 +138,30 @@ body>section,
 }
 
 #preloader>img {
-  left: 49%;
+  left: 38%;
   position: absolute;
-  top: 50%;
+  top: 32%;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  background: #000;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px 0077b3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0077b3;
+}
 
 /*=========================================
 	Header
@@ -229,7 +248,7 @@ body>section,
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-  color: #6a737b;
+  color: #0077b3;
   content: "___";
   position: relative;
   top: -8px;
@@ -252,7 +271,7 @@ body>section,
 }
 
 .social-links li a {
-  color: rgb(0, 0, 0);
+  color: #0077b3;
   display: block;
   margin: 0 6px;
 }
@@ -317,9 +336,9 @@ body>section,
 }
 
 .service-icon {
-  border: 1px solid #6a737b;
+  border: 1px solid #0077b3;
   border-radius: 50%;
-  color: #6a737b;
+  color: #0077b3;
   float: left;
   padding: 10px 13px;
 }
@@ -364,7 +383,7 @@ body>section,
 
 .work-filter ul li a:hover,
 .work-filter ul li a.active {
-  background-color: #6a737b;
+  background-color: #fff;
   border-radius: 6px;
   color: #fff;
   padding: 5px 17px;
