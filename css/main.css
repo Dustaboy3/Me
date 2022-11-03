@@ -336,9 +336,6 @@ body>section,
 }
 
 .service-icon {
-  border: 1px solid #0077b3;
-  border-radius: 50%;
-  color: #0077b3;
   float: left;
   padding: 10px 13px;
 }
@@ -755,4 +752,21 @@ label.error {
   position: fixed;
   right: 25px;
   z-index: 9;
+}
+
+.custom-link {
+  color: #000;
+  font-size: larger;
+}
+
+.custom-link:hover {
+  color: #0077b3;
+}
+
+.meloan {
+  transition: filter 0.4s;
+}
+
+.meloan:hover {
+  filter: brightness(0) invert(1);
 }
