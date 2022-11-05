@@ -137,10 +137,11 @@ body>section,
   z-index: 1100;
 }
 
-#preloader>img {
-  left: 38%;
+.preloader-img {
   position: absolute;
-  top: 32%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* width */
