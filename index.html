@@ -22,7 +22,7 @@
 
 <body id="body">
 	<div id="preloader">
-		<img src="img/preloader.gif" alt="Preloader">
+		<img class="preloader-img" src="img/preloader.gif" alt="Preloader">
 	</div>
 	<header id="navigation" class="navbar-fixed-top navbar">
 		<div class="container">
@@ -49,19 +49,17 @@
 	<section id="slider">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner" role="listbox">
-				<div class="item active bg-image" style="background-image: url(img/banner.jpg);">
-					<div class="carousel-caption">
-						<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
-							Domen Jelič</h2>
-
-						<ul class="social-links text-center">
-							<li><a href="https://github.com/Dustaboy3" target="_blank"><i
-										class="fa fa-github fa-lg"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/domen-jeli%C4%8D-ba5887195" target="_blank">
-									<i class="fa fa-linkedin fa-lg"></i></a></li>
-						</ul>
-					</div>
+				<div class="carousel-caption">
+					<ul class="social-links text-center">
+						<li><a href="https://github.com/Dustaboy3" target="_blank"><i
+									class="fa fa-github fa-lg"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/domen-jeli%C4%8D-ba5887195" target="_blank">
+								<i class="fa fa-linkedin fa-lg"></i></a></li>
+						<li><a href="https://www.meloan.si" target="_blank">
+								<img class="fa meloan" src="img/melonsm.png" alt="MeLoan small logo"></a></li>
+					</ul>
 				</div>
+				<div id="three-container"></div>
 			</div>
 		</div>
 	</section>
@@ -108,6 +106,51 @@
 			</div>
 		</div>
 	</section>
+	<section id="Projects" class="features">
+		<div class="container">
+			<div class="row">
+				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+					<h2>Projects</h2>
+					<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+				</div>
+				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+					<!--<div class="service-item">
+						<div class="service-icon">
+							<i class="fa fa-terminal fa-2x"></i>
+						</div>
+						<div class="service-desc">
+							<h3>Programming</h3>
+							<p>PHP, JS, CSS, HTML/PHTML, REACT, JAVA, MAGENTO</p>
+						</div>
+					</div>-->
+				</div>
+				<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+					<div class="service-item">
+						<div class="service-icon-img">
+							<a class="center-img" href="https://www.meloan.si/" target="_blank">
+								<img src="img/meloan.png" alt="MeLoan Logo">
+							</a>
+						</div>
+						<div class="service-desc">
+							<a class="custom-link" href="https://www.meloan.si/" target="_blank">meloan.si</a>
+							<p>Poiščite najboljšo ponudbo z uporabo MeLoan kreditnega kalkulatorja.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+					<!--<div class="service-item">
+						<div class="service-icon">
+							<i class="fa fa-bullhorn fa-2x"></i>
+						</div>
+						<div class="service-desc">
+							<h3>Other hobbies</h3>
+							<p>FL STUDIO, FITNESS, STARTUPS</p>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</section>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.singlePageNav.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -134,7 +177,22 @@
 		wow.init();
 	</script>
 	<script src="js/custom.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+	<script src="js/three.js"></script>
+	<script>
+		THREE.ShapeUtils.triangulateShape = (function () {
+			var pnlTriangulator = new PNLTRI.Triangulator();
+			return function triangulateShape(contour, holes) {
+				return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+			};
+		})();
+	</script>
 	<script type="text/javascript">
 		$(function () {
 
