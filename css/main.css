@@ -9,6 +9,7 @@ body {
   color: #0077b3;
   background: #000011;
   min-height: 100vh;
+  image-rendering: crisp-edges;
 }
 
 ol,
