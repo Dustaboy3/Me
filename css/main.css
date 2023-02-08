@@ -9,12 +9,6 @@ body {
   color: #0077b3;
   background: #000011;
   min-height: 100vh;
-  -webkit-filter: blur(0);
-  -moz-filter: blur(0);
-  -o-filter: blur(0);
-  -ms-filter: blur(0);
-  filter: blur(0);
-  -webkit-backface-visibility: hidden;
 }
 
 ol,
@@ -137,7 +131,7 @@ body>section,
 }
 
 #preloader {
-  background-color: #000;
+  background-color: #262526;
   height: 100%;
   position: fixed;
   width: 100%;
@@ -149,6 +143,7 @@ body>section,
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: block;
 }
 
 /* width */
