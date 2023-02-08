@@ -9,7 +9,12 @@ body {
   color: #0077b3;
   background: #000011;
   min-height: 100vh;
-  image-rendering: crisp-edges;
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  -o-filter: blur(0);
+  -ms-filter: blur(0);
+  filter: blur(0);
+  -webkit-backface-visibility: hidden;
 }
 
 ol,
