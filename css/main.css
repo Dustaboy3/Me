@@ -103,7 +103,7 @@ body>section,
 }
 
 .devider {
-  margin-top: 30px;
+  margin: 30px 0 0 0;
 }
 
 .devider i {
@@ -127,7 +127,7 @@ body>section,
 }
 
 .mb50 {
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 }
 
 #preloader {
@@ -265,7 +265,7 @@ body>section,
 }
 
 .social-links {
-  margin-top: 5%;
+  margin: 5% 0 0 0;
 }
 
 .social-links li {
@@ -314,7 +314,7 @@ body>section,
 
 .owl-controls {
   bottom: -45px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
   position: relative;
   text-align: center;
 }
@@ -344,7 +344,7 @@ body>section,
 }
 
 .service-desc {
-  margin-left: 70px;
+  margin: 0 0 0 70px;
   position: relative;
   top: 5px;
 }
@@ -353,7 +353,7 @@ body>section,
   color: #062033;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
 
 
@@ -364,7 +364,7 @@ body>section,
 ==========================================*/
 
 .work-filter {
-  margin-bottom: 35px;
+  margin: 0 0 35px 0;
 }
 
 .work-filter ul li {
@@ -445,7 +445,7 @@ body>section,
   border: 1px solid #fff;
   border-radius: 50%;
   display: inline-block;
-  margin-top: 20%;
+  margin: 20% 0 0 0;
   padding: 7px 10px;
 }
 
@@ -514,7 +514,7 @@ body>section,
 }
 
 .team-member .social-links {
-  margin-top: 24%;
+  margin: 24% 0 0 0;
 }
 
 .team-member .social-links li a {
@@ -579,7 +579,7 @@ body>section,
 .counters-item p {
   font-size: 18px;
   line-height: 24px;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
   text-transform: uppercase;
 }
 
@@ -596,7 +596,7 @@ body>section,
   color: #062033;
   font-size: 22px;
   line-height: 32px;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
 
 .contact-address p {
@@ -610,7 +610,7 @@ body>section,
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
 
 .contact-form .input-group {
@@ -623,13 +623,13 @@ body>section,
   border-style: none none solid;
   border-width: 0 0 1px;
   box-shadow: none;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .contact-form .input-field {
   width: 48%;
   float: left;
-  margin-right: 4%;
+  margin: 0 4% 0 0;
 }
 
 .contact-form .input-field:last-child {
@@ -658,13 +658,13 @@ label.error {
 }
 
 .footer-social {
-  margin-top: 17px;
+  margin: 17px 0 0 0;
 }
 
 .footer-social li a {
   color: #cdd2d6;
   display: block;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 #map_canvas {
@@ -693,7 +693,7 @@ label.error {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .about-us p {
@@ -701,7 +701,7 @@ label.error {
 }
 
 .footer-single .subscribe {
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   position: relative;
 }
 
@@ -747,7 +747,7 @@ label.error {
 
 .copyright {
   color: #fff;
-  margin-top: 100px;
+  margin: 100px 0 0 0;
 }
 
 #back-top {
@@ -780,12 +780,12 @@ label.error {
 .center-img {
   display: inline;
   left: 50%;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0;
 }
 
 .service-icon-img {
   z-index: 5000;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .ul-center {
