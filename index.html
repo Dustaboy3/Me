@@ -16,16 +16,14 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/city.css">
+	<link rel="stylesheet" href="css/dog.css">
 	<link rel="stylesheet" href="css/media-queries.css">
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/dog.js"></script>
 
 </head>
 
 <body id="body">
-	<div id="preloader">
-		<img class="preloader-img" src="img/preloader.webp" alt="Preloader">
-	</div>
 	<header id="navigation" class="navbar-fixed-top navbar">
 		<div class="container">
 			<div class="navbar-header">
@@ -78,152 +76,44 @@
 				<div class="name-text">
 					Domen Jelič
 				</div>
-				<div class="content">
-					<div class="cuboid floor one">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof one">
-						<div class="side"><i class="cactus"></i></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid floor two">
-						<div class="side"><span><i class="flowers"></i></span></div>
-						<div class="side"></div>
-						<div class="side"><span></span></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof two">
-						<div class="side"><i class="bush"></i></div>
-						<div class="side"></div>
-						<div class="side"><i class="bush"></i></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid floor three">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"><span></span></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof three">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid floor four">
-						<div class="side"><i class="man"></i></div>
-						<div class="side"></div>
-						<div class="side"><span></span></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof four">
-						<div class="side"><i class="bush"></i></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid floor five">
-						<div class="side"><i class="cactus2"></i><i class="cactus2"></i><span></span></div>
-						<div class="side"></div>
-						<div class="side"><span></span></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof five">
-						<div class="side"><i class="cactus"></i></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid floor six">
-						<div class="side"><span><i class="cat"></i><i class="cat"></i></span></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof six">
-						<div class="side"><i class="bush"></i></div>
-						<div class="side"></div>
-						<div class="side"><i class="cactus"></i></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid floor seven">
-						<div class="side"><i class="plant"></i></div>
-						<div class="side"></div>
-						<div class="side"><span></span></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof seven">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid floor eight">
-						<div class="side"><i class="plant"></i><i class="man"></i></div>
-						<div class="side"></div>
-						<div class="side"><span></span></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid roof eight">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid air-cooler">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="cuboid air-cooler">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
+				<div class="wrapper">
+					<!-- if you want to see the markers, remove d-none from them -->
+
+					<!-- indicates dog position -->
+					<div class="marker red d-none"></div>
+
+					<!-- indicates cursor position -->
+					<div class="marker green d-none"></div>
+
+					<!-- indicates dog's 'facing position'-->
+					<div class="marker blue d-none"></div>
+
+					<div class="dog">
+						<div class="body-wrapper">
+							<div class="body img-bg"></div>
+						</div>
+						<div class="head-wrapper">
+							<div class="head img-bg"></div>
+						</div>
+						<div class="leg-wrapper">
+							<div class="leg one img-bg"></div>
+						</div>
+						<div class="leg-wrapper">
+							<div class="leg two img-bg"></div>
+						</div>
+						<div class="leg-wrapper">
+							<div class="leg three img-bg"></div>
+						</div>
+						<div class="leg-wrapper">
+							<div class="leg four img-bg"></div>
+						</div>
+						<div class="tail-wrapper">
+							<div class="tail img-bg"></div>
+						</div>
 					</div>
 				</div>
+
+				<div class="indicator"></div>
 			</div>
 		</div>
 	</section>

@@ -405,7 +405,7 @@ body>section,
 }
 
 .overlay {
-  background-color: rgba(106, 115, 123, .9);
+  background-color: rgba(65, 70, 75, 0.863);
   text-align: center;
   position: absolute;
   left: 0;
