@@ -6,7 +6,6 @@ function init() {
         wrapper: document.querySelector('.wrapper'),
         dog: document.querySelector('.dog'),
         marker: document.querySelectorAll('.marker'),
-        // indicator: document.querySelector('.indicator'),
     }
 
     const animationFrames = {
