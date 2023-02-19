@@ -1,113 +1,105 @@
-/*============================================================
-	For Small Desktop
-==============================================================*/
-
 @media (min-width: 980px) and (max-width: 1150px) {
 
-/* slider */
-.carousel-caption h3 {
-  font-size: 45px;
+  /* slider */
+  .carousel-caption h3 {
+    font-size: 45px;
+  }
+
+  /* works */
+
+
+  /* team */
+
+  .member-thumb {
+    width: auto;
+  }
+
 }
-
-/* works */
-
-
-/* team */
-
-.member-thumb {
-  width: auto;
-}
-
-}
-
-
-/*============================================================
-	Tablet (Portrait) Design for a width of 768px
-==============================================================*/
 
 @media (min-width: 768px) and (max-width: 979px) {
 
 
-/* slider */
+  /* slider */
 
-.carousel-caption h2 {
-  font-size: 55px;
-}
+  .carousel-caption h2 {
+    font-size: 55px;
+  }
 
-.carousel-caption h3 {
-  font-size: 36px;
-}
+  .carousel-caption h3 {
+    font-size: 36px;
+  }
 
-/* services */
+  /* services */
 
-.service-item {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 325px;
-}
+  .service-item {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 325px;
+  }
 
-.service-icon {
-  float: none;
-  margin: 0 auto 15px;
-  text-align: center;
-  width: 50px;
-}
+  .service-icon {
+    float: none;
+    margin: 0 auto 15px;
+    text-align: center;
+    width: 50px;
+  }
 
-.service-desc {
-  margin-left: 0;
-  position: relative;
-  top: 0;
-}
+  .service-desc {
+    margin-left: 0;
+    position: relative;
+    top: 0;
+  }
 
-/* works */
+  /* works */
 
-.work-item {
-  width: 33%;
-}
+  .work-item {
+    width: 33%;
+  }
 
-/* team */
+  /* team */
 
-.member-thumb .overlay h5 {
-  margin: 25px 0;
-}
+  .member-thumb .overlay h5 {
+    margin: 25px 0;
+  }
 
-.member-thumb {
-  margin: 0 auto;
-}
+  .member-thumb {
+    margin: 0 auto;
+  }
 
-/* fatcs */
+  /* fatcs */
 
-#facts {
-background-position: center top !important;
-}
-.counters-item {
-  margin-bottom: 30px;
-}
+  #facts {
+    background-position: center top !important;
+  }
 
-.counters-item i {
-  margin: 0 0 15px;
-}
+  .counters-item {
+    margin-bottom: 30px;
+  }
 
-.counters-item strong {
-  font-size: 45px;
-}
+  .counters-item i {
+    margin: 0 0 15px;
+  }
 
-/* contact */
+  .counters-item strong {
+    font-size: 45px;
+  }
 
-.contact-form .name-email input {
-  margin-right: 0;
-  width: 100%;
-}
+  /* contact */
 
-.footer-social {
-  margin-top: 45px;
-}
+  .contact-form .name-email input {
+    margin-right: 0;
+    width: 100%;
+  }
 
-/* footer */
+  .footer-social {
+    margin-top: 45px;
+  }
 
-.footer-single {
-  margin-bottom: 30px;
-}
+  /* footer */
+
+  .footer-single {
+    margin-bottom: 30px;
+  }
 
 }
 
@@ -118,102 +110,102 @@ background-position: center top !important;
 
 @media only screen and (max-width: 767px) {
 
-.sec-sub-title p {
-  font-size: 14px;
-}
+  .sec-sub-title p {
+    font-size: 14px;
+  }
 
-/* slider */
-.carousel-caption h2 {
-  font-size: 35px;
-}
+  /* slider */
+  .carousel-caption h2 {
+    font-size: 35px;
+  }
 
-.carousel-caption h3 {
-  font-size: 22px;
-}
+  .carousel-caption h3 {
+    font-size: 22px;
+  }
 
-.carousel-caption p {
-  font-size: 14px;
-}
+  .carousel-caption p {
+    font-size: 14px;
+  }
 
-.social-links {
-  margin-top: 20%;
-}
+  .social-links {
+    margin-top: 20%;
+  }
 
-/* services */
+  /* services */
 
-.service-item {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 280px;
-}
+  .service-item {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 280px;
+  }
 
-.service-icon {
-  float: none;
-  margin: 0 auto 15px;
-  text-align: center;
-  width: 50px;
-}
+  .service-icon {
+    float: none;
+    margin: 0 auto 15px;
+    text-align: center;
+    width: 50px;
+  }
 
-.service-desc {
-  margin-left: 0;
-  position: relative;
-  top: 0;
-}
+  .service-desc {
+    margin-left: 0;
+    position: relative;
+    top: 0;
+  }
 
-/* works */
+  /* works */
 
-.work-item {
-  left: 5% !important;
-  width: 90%;
-}
+  .work-item {
+    left: 5% !important;
+    width: 90%;
+  }
 
-/* team */
+  /* team */
 
-.team-member {
-  margin-bottom: 30px;
-}
+  .team-member {
+    margin-bottom: 30px;
+  }
 
-.team-member:last-child {
-  margin-bottom: 0;
-}
+  .team-member:last-child {
+    margin-bottom: 0;
+  }
 
-.member-thumb {
-  margin: 0 auto;
-}
+  .member-thumb {
+    margin: 0 auto;
+  }
 
-/* facts */
+  /* facts */
 
-#facts {
-background-position: center top !important;
-}
+  #facts {
+    background-position: center top !important;
+  }
 
-.counters-item {
-  margin-bottom: 30px;
-}
+  .counters-item {
+    margin-bottom: 30px;
+  }
 
-/* contact */
-.contact-address {
-  margin-bottom: 30px;
-}
+  /* contact */
+  .contact-address {
+    margin-bottom: 30px;
+  }
 
-.footer-social {
-  margin-top: 20px;
-  text-align: center;
-}
+  .footer-social {
+    margin-top: 20px;
+    text-align: center;
+  }
 
-.footer-social li {
-  display: inline-block;
-}
+  .footer-social li {
+    display: inline-block;
+  }
 
-.footer-social li a {
-  margin: 0 10px;
-}
+  .footer-social li a {
+    margin: 0 10px;
+  }
 
-/* footer */
+  /* footer */
 
-.footer-single {
-  margin-bottom: 30px;
-}
+  .footer-single {
+    margin-bottom: 30px;
+  }
 
 }
 
@@ -225,32 +217,32 @@ background-position: center top !important;
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 
-/* services */
+  /* services */
 
-.service-item {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 325px;
-}
+  .service-item {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 325px;
+  }
 
-.service-icon {
-  float: none;
-  margin: 0 auto 15px;
-  text-align: center;
-  width: 50px;
-}
+  .service-icon {
+    float: none;
+    margin: 0 auto 15px;
+    text-align: center;
+    width: 50px;
+  }
 
-.service-desc {
-  margin-left: 0;
-  position: relative;
-  top: 0;
-}
+  .service-desc {
+    margin-left: 0;
+    position: relative;
+    top: 0;
+  }
 
-/* works */
+  /* works */
 
-.work-item {
-  left: inherit !important;
-  width: 50%;
-}
+  .work-item {
+    left: inherit !important;
+    width: 50%;
+  }
 
 }
