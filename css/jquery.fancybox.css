@@ -118,7 +118,6 @@
 	cursor: pointer;
 	text-decoration: none;
 	background: transparent url('blank.gif');
-	/* helps IE */
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	z-index: 8040;
 }
@@ -166,8 +165,6 @@
 	overflow: visible !important;
 }
 
-/* Overlay helper */
-
 .fancybox-lock {
 	overflow: hidden !important;
 	width: auto;
@@ -202,8 +199,6 @@
 	overflow-y: scroll;
 }
 
-/* Title helper */
-
 .fancybox-title {
 	visibility: hidden;
 	font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -230,7 +225,6 @@
 	margin-right: -100%;
 	padding: 2px 20px;
 	background: transparent;
-	/* Fallback for web browsers that doesn't support RGBa */
 	background: rgba(0, 0, 0, 0.8);
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -262,7 +256,6 @@
 	background: rgba(0, 0, 0, .8);
 }
 
-/*Retina graphics!*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
@@ -273,12 +266,81 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	.fancybox-next span {
 		background-image: url('fancybox_sprite@2x.png');
 		background-size: 44px 152px;
-		/*The size of the normal image, half the size of the hi-res image*/
 	}
 
 	#fancybox-loading div {
 		background-image: url('fancybox_loading@2x.gif');
 		background-size: 24px 24px;
-		/*The size of the normal image, half the size of the hi-res image*/
 	}
+}
+
+.wag {
+	animation: infinite 0.5s wag;
+}
+
+.head-wrapper {
+	position: absolute;
+	top: 6px;
+	left: 16px;
+	width: calc(2 * 31px);
+	height: calc(2 * 32px);
+	overflow: hidden;
+}
+
+.flip {
+	transform: scale(-1, 1);
+}
+
+.img-bg {
+	image-rendering: pixelated;
+	background-repeat: no-repeat !important;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.indicator {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	color: #fff;
+}
+
+.d-none {
+	display: none;
+}
+
+.indicator {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+.marker {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	transition: 0.5s;
+	z-index: 100;
+	margin-top: -5px;
+	margin-left: -5px;
+}
+
+.red {
+	background-color: rgb(255, 64, 0);
+}
+
+.green {
+	background-color: rgb(42, 239, 190);
+}
+
+.blue {
+	background-color: rgb(0, 140, 255);
 }
