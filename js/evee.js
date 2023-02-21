@@ -1,10 +1,27 @@
 
 function init() {
 
+    evolution = generateElement();
+    evoClass = "." + evolution;
+    evoDivider1 = ".dividerElement-1-" + evolution;
+    evoDivider2 = ".dividerElement-2-" + evolution;
+    evoColorClass = "color-" + evolution;
+    evoBorderClass = "border-" + evolution;
+    evoBorderTopClass = "border-top" + evolution;
+
+    document.querySelector(evoClass).classList.remove('d-none');
+    document.querySelector(evoDivider1).classList.remove('d-none');
+    document.querySelector(evoDivider2).classList.remove('d-none');
+    document.querySelector('#AboutMe').classList.add(evoColorClass);
+    document.querySelector('#Projects').classList.add(evoColorClass);
+    document.querySelector('.fa-github').classList.add(evoColorClass);
+    document.querySelector('.fa-linkedin').classList.add(evoColorClass);
+    document.querySelector('.background-wh').classList.add(evoBorderClass);
+
     const elements = {
         body: document.querySelector('.wrapper'),
         wrapper: document.querySelector('.wrapper'),
-        dog: document.querySelector('.dog'),
+        dog: document.querySelector('.evee'),
         marker: document.querySelectorAll('.marker'),
     }
 
@@ -165,10 +182,6 @@ function init() {
 
     const animateDog = ({ target, frameW, currentFrame, end, data, part, speed, direction }) => {
         const offset = direction === 'clockwise' ? 1 : -1
-
-        //update indicator
-        // elements.indicator.innerHTML = `dog-angle: ${data.angle} | control angle:${control.angle} | currentFrame: ${currentFrame} | direction: ${direction} | offset: ${offset} | frameOffset: ${data.animation[currentFrame][0] * frameW * offset} | ${data.facing.x} / ${data.facing.y} `
-
         target.style.transform = `translateX(${px(data.animation[currentFrame][0] * -frameW)})`
         if (part === 'body') {
             positionLegs(data.dog, currentFrame)
@@ -408,6 +421,53 @@ function init() {
 
     elements.body.addEventListener('click', moveDog)
 
+
+    //Evee elements functions
+
+    function isNight() {
+        var date = new Date();
+        var currentTime = date.getHours();
+        if (currentTime >= 22 || currentTime <= 5) {
+            return true
+        }
+        return false;
+    }
+
+    function getCommonElement() {
+        let chance = Math.floor(Math.random() * 5);
+        switch (chance) {
+            case 0:
+                return 'vaporeon';
+            case 1:
+                return 'jolteon';
+            case 2:
+                return 'flareon';
+            case 3:
+                return 'leafeon';
+            case 4:
+                return 'glaceon';
+        }
+    }
+
+    function generateElement() {
+        let chanceNight = Math.floor((Math.random() < 0.5));
+        let chanceDay = Math.floor(Math.random() * 100);
+        if (isNight() === true) {
+            if (chanceNight === 0) {
+                return 'umbreon';
+            } else {
+                return getCommonElement();
+            }
+        } else {
+            if (chanceDay === 88) {
+                return 'sylveon';
+            }
+            if (chanceDay === 17) {
+                return 'espeon';
+            }
+            return getCommonElement();
+        }
+    }
 }
 
 window.addEventListener('DOMContentLoaded', init)

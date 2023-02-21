@@ -10,16 +10,22 @@
 	<meta name="keywords"
 		content="one page, single page, onepage, responsive, creative, business, html5, css3, css3 animation, developer, software, software developer, senior, senior software developer, frontend, javascript, js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/dog.css">
+	<link rel="stylesheet" href="css/evee.css">
 	<link rel="stylesheet" href="css/media-queries.css">
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/dog.js"></script>
-
+	<script src="js/evee.js"></script>
 </head>
 
 <body id="body">
@@ -49,7 +55,7 @@
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner" role="listbox">
 				<div class="carousel-caption">
-					<ul class="social-links text-center ul-center">
+					<ul class="social-links text-center ul-center background-wh">
 						<li>
 							<a href="https://github.com/Dustaboy3" target="_blank">
 								<i class="fa fa-github fa-3x block"></i>
@@ -75,19 +81,39 @@
 				<div class="name-text">
 					Domen Jelič
 				</div>
+				<div id="vaporeon" class="vaporeon d-none">
+					<img class="d-none" src="./img/elements/water.png">
+				</div>
+				<div id="jolteon" class="jolteon d-none">
+					<img class="d-none" src="./img/elements/electric.png">
+				</div>
+				<div id="flareon" class="flareon d-none">
+					<img class="d-none" src="./img/elements/fire.png">
+				</div>
+				<div id="espeon" class="espeon d-none">
+					<img class="d-none" src="./img/elements/psychic.png">
+				</div>
+				<div id="umbreon" class="umbreon d-none">
+					<img class="d-none" src="./img/elements/dark.png">
+				</div>
+				<div id="leafeon" class="leafeon d-none">
+					<img class="d-none" src="./img/elements/grass.png">
+				</div>
+				<div id="glaceon" class="glaceon d-none">
+					<img class="d-none" src="./img/elements/ice.png">
+				</div>
+				<div id="sylveon" class="sylveon d-none">
+					<img class="d-none" src="./img/elements/fairy.png">
+				</div>
 				<div class="wrapper">
+					<!-- DEBUG -->
 					<!-- if you want to see the markers, remove d-none from them -->
-
-					<!-- indicates dog position -->
 					<div class="marker red d-none"></div>
-
-					<!-- indicates cursor position -->
 					<div class="marker green d-none"></div>
-
-					<!-- indicates dog's 'facing position'-->
 					<div class="marker blue d-none"></div>
-
-					<div class="dog">
+					<div id="loading" style="font-size: 30px; color: white;">Loading Pokemon...</div>
+					<!-- DEBUG -->
+					<!-- <div class="evee">
 						<div class="body-wrapper">
 							<div class="body img-bg"></div>
 						</div>
@@ -109,7 +135,7 @@
 						<div class="tail-wrapper">
 							<div class="tail img-bg"></div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 				<div class="indicator"></div>
@@ -121,7 +147,26 @@
 			<div class="row">
 				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
 					<h2>About me</h2>
-					<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					<div class="devider">
+						<i id="divider" class="fa fa-lg">
+							<img class="dividerElement-1-vaporeon d-none" width="30px" height="30px"
+								src="./img/elements/water.png">
+							<img class="dividerElement-1-jolteon d-none" width="30px" height="30px"
+								src="./img/elements/electric.png">
+							<img class="dividerElement-1-flareon d-none" width="30px" height="30px"
+								src="./img/elements/fire.png">
+							<img class="dividerElement-1-espeon d-none" width="30px" height="30px"
+								src="./img/elements/psychic.png">
+							<img class="dividerElement-1-umbreon d-none" width="30px" height="30px"
+								src="./img/elements/dark.png">
+							<img class="dividerElement-1-leafeon d-none" width="30px" height="30px"
+								src="./img/elements/grass.png">
+							<img class="dividerElement-1-glaceon d-none" width="30px" height="30px"
+								src="./img/elements/ice.png">
+							<img class="dividerElement-1-sylveon d-none" width="30px" height="30px"
+								src="./img/elements/fairy.png">
+						</i>
+					</div>
 				</div>
 				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
 					<div class="service-item">
@@ -164,7 +209,26 @@
 			<div class="row">
 				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
 					<h2>Projects</h2>
-					<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					<div class="devider">
+						<i class="fa fa-lg">
+							<img class="dividerElement-2-vaporeon d-none" width="30px" height="30px"
+								src="./img/elements/water.png">
+							<img class="dividerElement-2-jolteon d-none" width="30px" height="30px"
+								src="./img/elements/electric.png">
+							<img class="dividerElement-2-flareon d-none" width="30px" height="30px"
+								src="./img/elements/fire.png">
+							<img class="dividerElement-2-espeon d-none" width="30px" height="30px"
+								src="./img/elements/psychic.png">
+							<img class="dividerElement-2-umbreon d-none" width="30px" height="30px"
+								src="./img/elements/dark.png">
+							<img class="dividerElement-2-leafeon d-none" width="30px" height="30px"
+								src="./img/elements/grass.png">
+							<img class="dividerElement-2-glaceon d-none" width="30px" height="30px"
+								src="./img/elements/ice.png">
+							<img class="dividerElement-2-sylveon d-none" width="30px" height="30px"
+								src="./img/elements/fairy.png">
+						</i>
+					</div>
 				</div>
 				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
 					<div class="service-item">
