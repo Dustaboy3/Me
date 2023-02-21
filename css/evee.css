@@ -48,7 +48,7 @@ h4 {
     background-size: calc(2 * 6 * 48px) calc(2 * 48px) !important;
 }
 
-.dog {
+.evee {
     position: absolute;
     width: calc(2 * 48px);
     height: calc(2 * 48px);
@@ -248,4 +248,128 @@ a:hover {
 
 .blue {
     background-color: rgb(0, 140, 255);
+}
+
+.vaporeon {
+    background: #3692dc;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-vaporeon {
+    color: #3692dc;
+}
+
+.border-vaporeon {
+    border: 3px solid #3692dc;
+}
+
+.jolteon {
+    background: #fbd200;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-jolteon {
+    color: #fbd200;
+}
+
+.border-jolteon {
+    border: 3px solid #fbd200;
+}
+
+.flareon {
+    background: #dc2100;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-flareon {
+    color: #dc2100;
+}
+
+.border-flareon {
+    border: 3px solid #dc2100;
+}
+
+.espeon {
+    background: #ff6676;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-espeon {
+    color: #ff6676;
+}
+
+.border-espeon {
+    border: 3px solid #ff6676;
+}
+
+.umbreon {
+    background: #5b5366;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-umbreon {
+    color: #5b5366;
+}
+
+.border-umbreon {
+    border: 3px solid #5b5366;
+}
+
+.leafeon {
+    background: #5fbc50;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-leafeon {
+    color: #5fbc50;
+}
+
+.border-leafeon {
+    border: 3px solid #5fbc50;
+}
+
+.glaceon {
+    background: #4bd2c1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-glaceon {
+    color: #4bd2c1;
+}
+
+.border-glaceon {
+    border: 3px solid #4bd2c1;
+}
+
+.sylveon {
+    background: #fb8aec;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.color-sylveon {
+    color: #fb8aec;
+}
+
+.border-sylveon {
+    border: 3px solid #fb8aec;
+}
+
+.border-top-sylveon {
+    border-top: 3px solid #fb8aec;
 }
