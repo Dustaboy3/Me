@@ -1,13 +1,13 @@
 
 function init() {
 
-    evolution = generateElement();
-    evoClass = "." + evolution;
-    evoDivider1 = ".dividerElement-1-" + evolution;
-    evoDivider2 = ".dividerElement-2-" + evolution;
-    evoColorClass = "color-" + evolution;
-    evoBorderClass = "border-" + evolution;
-    evoBorderTopClass = "border-top" + evolution;
+    element = generateElement();
+    evoClass = "." + element;
+    evoDivider1 = ".dividerElement-1-" + element;
+    evoDivider2 = ".dividerElement-2-" + element;
+    evoColorClass = "color-" + element;
+    evoBorderClass = "border-" + element;
+    evoBorderTopClass = "border-top" + element;
 
     document.querySelector(evoClass).classList.remove('d-none');
     document.querySelector(evoDivider1).classList.remove('d-none');
@@ -422,7 +422,7 @@ function init() {
     elements.body.addEventListener('click', moveDog)
 
 
-    //Evee elements functions
+    //Elements functions
 
     function isNight() {
         var date = new Date();
@@ -437,15 +437,15 @@ function init() {
         let chance = Math.floor(Math.random() * 5);
         switch (chance) {
             case 0:
-                return 'vaporeon';
+                return 'water';
             case 1:
-                return 'jolteon';
+                return 'electric';
             case 2:
-                return 'flareon';
+                return 'fire';
             case 3:
-                return 'leafeon';
+                return 'grass';
             case 4:
-                return 'glaceon';
+                return 'ice';
         }
     }
 
@@ -454,16 +454,16 @@ function init() {
         let chanceDay = Math.floor(Math.random() * 100);
         if (isNight() === true) {
             if (chanceNight === 0) {
-                return 'umbreon';
+                return 'dark';
             } else {
                 return getCommonElement();
             }
         } else {
             if (chanceDay === 88) {
-                return 'sylveon';
+                return 'fairy';
             }
             if (chanceDay === 17) {
-                return 'espeon';
+                return 'psychic';
             }
             return getCommonElement();
         }
