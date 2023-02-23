@@ -250,126 +250,122 @@ a:hover {
     background-color: rgb(0, 140, 255);
 }
 
-.vaporeon {
+.water {
     background: #3692dc;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-vaporeon {
+.color-water {
     color: #3692dc;
 }
 
-.border-vaporeon {
+.border-water {
     border: 3px solid #3692dc;
 }
 
-.jolteon {
+.electric {
     background: #fbd200;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-jolteon {
+.color-c {
     color: #fbd200;
 }
 
-.border-jolteon {
+.border-c {
     border: 3px solid #fbd200;
 }
 
-.flareon {
+.fire {
     background: #dc2100;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-flareon {
+.color-fire {
     color: #dc2100;
 }
 
-.border-flareon {
+.border-fire {
     border: 3px solid #dc2100;
 }
 
-.espeon {
+.psychic {
     background: #ff6676;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-espeon {
+.color-psychic {
     color: #ff6676;
 }
 
-.border-espeon {
+.border-psychic {
     border: 3px solid #ff6676;
 }
 
-.umbreon {
+.dark {
     background: #5b5366;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-umbreon {
+.color-dark {
     color: #5b5366;
 }
 
-.border-umbreon {
+.border-dark {
     border: 3px solid #5b5366;
 }
 
-.leafeon {
+.grass {
     background: #5fbc50;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-leafeon {
+.color-grass {
     color: #5fbc50;
 }
 
-.border-leafeon {
+.border-grass {
     border: 3px solid #5fbc50;
 }
 
-.glaceon {
+.ice {
     background: #4bd2c1;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-glaceon {
+.color-ice {
     color: #4bd2c1;
 }
 
-.border-glaceon {
+.border-ice {
     border: 3px solid #4bd2c1;
 }
 
-.sylveon {
+.fairy {
     background: #fb8aec;
     width: 100%;
     height: 100vh;
     position: absolute;
 }
 
-.color-sylveon {
+.color-fairy {
     color: #fb8aec;
 }
 
-.border-sylveon {
+.border-fairy {
     border: 3px solid #fb8aec;
-}
-
-.border-top-sylveon {
-    border-top: 3px solid #fb8aec;
 }
