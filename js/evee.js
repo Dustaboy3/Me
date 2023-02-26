@@ -472,3 +472,44 @@ function init() {
 
 window.addEventListener('DOMContentLoaded', init)
 
+window.onload = function () {
+    var mountainElectric = document.getElementById("mountainElectric");
+    var cloudsEletric = document.getElementById("cloudsEletric");
+    var mountainFire = document.getElementById("mountainFire");
+    var cloudsFire = document.getElementById("cloudsFire");
+    var mountainIce = document.getElementById("mountainIce");
+    var cloudsIce = document.getElementById("cloudsIce");
+    var mountainPsychic = document.getElementById("mountainPsychic");
+    var groundPsychic = document.getElementById("groundPsychic");
+    var mountainFairy = document.getElementById("mountainFairy");
+    var cloudsFairy = document.getElementById("cloudsFairy");
+    var mountainWater = document.getElementById("mountainWater");
+    var cloudsWater = document.getElementById("cloudsWater");
+    var mountainGrass = document.getElementById("mountainGrass");
+    var cloudsGrass = document.getElementById("cloudsGrass");
+    var mountainDark = document.getElementById("mountainDark");
+    var cloudsDark = document.getElementById("cloudsDark");
+    var x;
+
+    window.addEventListener('mousemove', function (event) {
+        x = event.clientX - (window.innerWidth / 2);
+        if (typeof x !== 'undefined') {
+            mountainElectric.style.left = -x / 48 + "px";
+            cloudsEletric.style.left = -x / 24 + "px";
+            mountainFire.style.left = -x / 48 + "px";
+            cloudsFire.style.left = -x / 24 + "px";
+            mountainIce.style.left = -x / 48 + "px";
+            cloudsIce.style.left = -x / 24 + "px";
+            mountainPsychic.style.left = -x / 48 + "px";
+            groundPsychic.style.left = -x / 24 + "px";
+            mountainFairy.style.left = -x / 48 + "px";
+            cloudsFairy.style.left = -x / 24 + "px";
+            mountainWater.style.left = -x / 48 + "px";
+            cloudsWater.style.left = -x / 24 + "px";
+            mountainGrass.style.left = -x / 48 + "px";
+            cloudsGrass.style.left = -x / 24 + "px";
+            mountainDark.style.left = -x / 48 + "px";
+            cloudsDark.style.left = -x / 24 + "px";
+        }
+    }, false);
+}
