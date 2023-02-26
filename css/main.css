@@ -278,3 +278,47 @@ body>section,
   background: white;
   border-radius: 30px;
 }
+
+.mountain-bg {
+  width: 100%;
+  height: 100vh;
+}
+
+.mountain {
+  position: inherit;
+  z-index: 3;
+  transform: scale(1.1);
+}
+
+.clouds {
+  position: inherit;
+  z-index: 2;
+}
+
+.bg {
+  position: inherit;
+  z-index: 1;
+}
+
+.ground {
+  position: inherit;
+  z-index: 4;
+}
+
+.ground-ice {
+  position: inherit;
+  z-index: 4;
+  transform: scale(1.1);
+}
+
+.ground-psychic {
+  position: inherit;
+  z-index: 2;
+  transform: scale(1.1);
+}
+
+.clouds-water {
+  position: inherit;
+  z-index: 2;
+  transform: scale(1.1);
+}

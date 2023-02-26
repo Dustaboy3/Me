@@ -24,7 +24,6 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/evee.css">
 	<link rel="stylesheet" href="css/media-queries.css">
-	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script src="js/evee.js"></script>
 </head>
 
@@ -32,14 +31,11 @@
 	<header id="navigation" class="navbar-fixed-top navbar">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- responsive nav button -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<i class="fa fa-bars fa-2x"></i>
 				</button>
-				<!-- /responsive nav button -->
 			</div>
-			<!-- main nav -->
 			<nav class="collapse navbar-collapse navbar-right" role="navigation">
 				<ul id="nav" class="nav navbar-nav">
 					<li class="current"><a href="#body">Home</a></li>
@@ -47,8 +43,6 @@
 					<li><a href="#Projects">Projects</a></li>
 				</ul>
 			</nav>
-			<!-- /main nav -->
-
 		</div>
 	</header>
 	<section id="slider">
@@ -81,6 +75,7 @@
 				<div class="name-text">
 					Domen Jelič
 				</div>
+				<!-- 
 				<div id="water" class="water d-none">
 					<img class="d-none" src="./img/elements/water.png">
 				</div>
@@ -105,6 +100,59 @@
 				<div id="fairy" class="fairy d-none">
 					<img class="d-none" src="./img/elements/fairy.png">
 				</div>
+				-->
+				<div id="background" class="electric d-none">
+					<img class="mountain-bg" src="./img/mountains/m1/PRE_ORIG_SIZE.png"
+						alt="The image of a nice moutaing">
+				</div>
+				<div id="background" class="fire d-none">
+					<img id="mountainFire" class="mountain-bg mountain" src="./img/mountains/m2/mountain.png"
+						alt="The image of a nice mountain">
+					<img id="cloudsFire" class="mountain-bg clouds" src="./img/mountains/m2/clouds.png"
+						alt="The image of a nice clouds">
+					<img class="mountain-bg ground" src="./img/mountains/m2/ground.png"
+						alt="The image of a nice ground">
+					<img class="mountain-bg bg" src="./img/mountains/m2/bg.png" alt="The background image">
+				</div>
+				<div id="background" class="ice d-none">
+					<img id="mountainIce" class="mountain-bg mountain" src="./img/mountains/m3/mountain.png"
+						alt="The image of a nice mountain">
+					<img id="cloudsIce" class="mountain-bg ground-ice" src="./img/mountains/m3/clouds.png"
+						alt="The image of a nice clouds">
+					<img class="mountain-bg bg" src="./img/mountains/m3/bg.png" alt="The background image">
+				</div>
+				<div id="background" class="psychic d-none">
+					<img id="mountainPsychic" class="mountain-bg mountain" src="./img/mountains/m4/mountain.png"
+						alt="The image of a nice mountain">
+					<img id="groundPsychic" class="mountain-bg ground-psychic" src="./img/mountains/m4/ground.png"
+						alt="The image of a nice ground">
+					<img class="mountain-bg bg" src="./img/mountains/m4/bg.png" alt="The background image">
+				</div>
+				<div id="background" class="fairy d-none">
+					<img id="mountainFairy" class="mountain-bg mountain" src="./img/mountains/m5/mountain.png"
+						alt="The image of a nice mountain">
+					<img id="cloudsFairy" class="mountain-bg clouds" src="./img/mountains/m5/clouds.png"
+						alt="The image of a nice ground">
+					<img class="mountain-bg bg" src="./img/mountains/m5/bg.png" alt="The background image">
+				</div>
+				<div id="background" class="water d-none">
+					<img id="mountainWater" class="mountain-bg mountain" src="./img/mountains/m6/mountain.png"
+						alt="The image of a nice mountain">
+					<img id="cloudsWater" class="mountain-bg clouds-water" src="./img/mountains/m6/clouds.png"
+						alt="The image of a nice clouds">
+					<img class="mountain-bg ground" src="./img/mountains/m6/ground.png"
+						alt="The image of a nice ground">
+					<img class="mountain-bg bg" src="./img/mountains/m6/bg.png" alt="The background image">
+				</div>
+				<div id="background" class="grass d-none">
+					<img class="mountain-bg" src="./img/mountains/m7/PRE_ORIG_SIZE.png"
+						alt="The image of a nice moutaing">
+				</div>
+				<div id="background" class="dark d-none">
+					<img class="mountain-bg" src="./img/mountains/m8/PRE_ORIG_SIZE.png"
+						alt="The image of a nice moutaing">
+				</div>
+
 				<div class="wrapper">
 					<!-- DEBUG -->
 					<!-- if you want to see the markers, remove d-none from them -->
@@ -279,18 +327,6 @@
 	<script src="js/jquery-countTo.js"></script>
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script>
-		var wow = new WOW({
-			boxClass: 'wow',
-			animateClass: 'animated',
-			offset: 120,
-			mobile: false,
-			live: true
-		}
-		);
-		wow.init();
-	</script>
 	<script src="js/custom.js"></script>
 </body>
 

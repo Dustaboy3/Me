@@ -450,6 +450,7 @@ function init() {
     }
 
     function generateElement() {
+        //return 'grass';
         let chanceNight = Math.floor((Math.random() < 0.5));
         let chanceDay = Math.floor(Math.random() * 100);
         if (isNight() === true) {
@@ -472,3 +473,33 @@ function init() {
 
 window.addEventListener('DOMContentLoaded', init)
 
+window.onload = function () {
+    var mountainFire = document.getElementById("mountainFire");
+    var cloudsFire = document.getElementById("cloudsFire");
+    var mountainIce = document.getElementById("mountainIce");
+    var cloudsIce = document.getElementById("cloudsIce");
+    var mountainPsychic = document.getElementById("mountainPsychic");
+    var groundPsychic = document.getElementById("groundPsychic");
+    var mountainFairy = document.getElementById("mountainFairy");
+    var cloudsFairy = document.getElementById("cloudsFairy");
+    var mountainWater = document.getElementById("mountainWater");
+    var cloudsWater = document.getElementById("cloudsWater");
+    var x;
+
+    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
+    window.addEventListener('mousemove', function (event) {
+        x = event.clientX - (window.innerWidth / 2);
+        if (typeof x !== 'undefined') {
+            mountainFire.style.left = -x / 48 + "px";
+            cloudsFire.style.left = -x / 24 + "px";
+            mountainIce.style.left = -x / 48 + "px";
+            cloudsIce.style.left = -x / 24 + "px";
+            mountainPsychic.style.left = -x / 48 + "px";
+            groundPsychic.style.left = -x / 24 + "px";
+            mountainFairy.style.left = -x / 48 + "px";
+            cloudsFairy.style.left = -x / 24 + "px";
+            mountainWater.style.left = -x / 48 + "px";
+            cloudsWater.style.left = -x / 24 + "px";
+        }
+    }, false);
+}
