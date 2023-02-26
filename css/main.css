@@ -322,3 +322,9 @@ body>section,
   z-index: 2;
   transform: scale(1.1);
 }
+
+.clouds-electric {
+  position: inherit;
+  z-index: 2;
+  transform: scale(1.2);
+}

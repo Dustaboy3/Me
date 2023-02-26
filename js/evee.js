@@ -450,7 +450,6 @@ function init() {
     }
 
     function generateElement() {
-        //return 'grass';
         let chanceNight = Math.floor((Math.random() < 0.5));
         let chanceDay = Math.floor(Math.random() * 100);
         if (isNight() === true) {
@@ -474,6 +473,8 @@ function init() {
 window.addEventListener('DOMContentLoaded', init)
 
 window.onload = function () {
+    var mountainElectric = document.getElementById("mountainElectric");
+    var cloudsEletric = document.getElementById("cloudsEletric");
     var mountainFire = document.getElementById("mountainFire");
     var cloudsFire = document.getElementById("cloudsFire");
     var mountainIce = document.getElementById("mountainIce");
@@ -484,12 +485,17 @@ window.onload = function () {
     var cloudsFairy = document.getElementById("cloudsFairy");
     var mountainWater = document.getElementById("mountainWater");
     var cloudsWater = document.getElementById("cloudsWater");
+    var mountainGrass = document.getElementById("mountainGrass");
+    var cloudsGrass = document.getElementById("cloudsGrass");
+    var mountainDark = document.getElementById("mountainDark");
+    var cloudsDark = document.getElementById("cloudsDark");
     var x;
 
-    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
     window.addEventListener('mousemove', function (event) {
         x = event.clientX - (window.innerWidth / 2);
         if (typeof x !== 'undefined') {
+            mountainElectric.style.left = -x / 48 + "px";
+            cloudsEletric.style.left = -x / 24 + "px";
             mountainFire.style.left = -x / 48 + "px";
             cloudsFire.style.left = -x / 24 + "px";
             mountainIce.style.left = -x / 48 + "px";
@@ -500,6 +506,10 @@ window.onload = function () {
             cloudsFairy.style.left = -x / 24 + "px";
             mountainWater.style.left = -x / 48 + "px";
             cloudsWater.style.left = -x / 24 + "px";
+            mountainGrass.style.left = -x / 48 + "px";
+            cloudsGrass.style.left = -x / 24 + "px";
+            mountainDark.style.left = -x / 48 + "px";
+            cloudsDark.style.left = -x / 24 + "px";
         }
     }, false);
 }
