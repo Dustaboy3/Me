@@ -392,3 +392,16 @@ body>section,
     overflow: hidden;
   }
 }
+
+#click {
+  z-index: 101;
+  position: absolute;
+  top: 85px;
+  font-size: 30px;
+  height: 32px;
+  width: 300px;
+  background: white;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 15px;
+}

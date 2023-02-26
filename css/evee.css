@@ -30,7 +30,7 @@ h4 {
     justify-content: center;
     align-items: center;
     background: transparent;
-    z-index: 40000;
+    z-index: 101;
 }
 
 .leg {
@@ -48,15 +48,6 @@ h4 {
     width: calc(2 * 6 * 48px);
     height: calc(2 * 48px);
     background-size: calc(2 * 6 * 48px) calc(2 * 48px) !important;
-}
-
-.evee {
-    position: absolute;
-    width: calc(2 * 48px);
-    height: calc(2 * 48px);
-    animation: fade-in forwards 1s;
-    transition: 0.5s;
-    z-index: 50000;
 }
 
 @keyframes fade-in {
@@ -230,17 +221,6 @@ a:hover {
     right: 10px;
 }
 
-.marker {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    transition: 0.5s;
-    z-index: 100;
-    margin-top: -5px;
-    margin-left: -5px;
-}
-
 .red {
     background-color: rgb(255, 64, 0);
 }
@@ -371,4 +351,60 @@ a:hover {
 
 .border-fairy {
     border: 3px solid #fb8aec;
+}
+
+.egg {
+    height: 171px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
