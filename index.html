@@ -139,39 +139,16 @@
 				</div>
 
 				<div class="wrapper">
-					<!-- DEBUG -->
-					<!-- if you want to see the markers, remove d-none from them -->
-					<div class="marker red d-none"></div>
-					<div class="marker green d-none"></div>
-					<div class="marker blue d-none"></div>
-					<div id="loading" style="font-size: 30px; color: white;">Loading...</div>
-					<!-- DEBUG -->
-					<div class="evee">
-						<div class="body-wrapper">
-							<div class="body img-bg"></div>
-						</div>
-						<div class="head-wrapper">
-							<div class="head img-bg"></div>
-						</div>
-						<div class="leg-wrapper">
-							<div class="leg one img-bg"></div>
-						</div>
-						<div class="leg-wrapper">
-							<div class="leg two img-bg"></div>
-						</div>
-						<div class="leg-wrapper">
-							<div class="leg three img-bg"></div>
-						</div>
-						<div class="leg-wrapper">
-							<div class="leg four img-bg"></div>
-						</div>
-						<div class="tail-wrapper">
-							<div class="tail img-bg"></div>
-						</div>
-					</div>
+					<div id="click">0</div>
+					<img onClick="onClick()" class=" egg egg-dark d-none" src="./img/dragons/dark/egg/egg1.png">
+					<img onClick="onClick()" class=" egg egg-electric d-none" src="./img/dragons/electric/egg/egg1.png">
+					<img onClick="onClick()" class=" egg egg-fairy d-none" src="./img/dragons/fairy/egg/egg1.png">
+					<img onClick="onClick()" class=" egg egg-fire d-none" src="./img/dragons/fire/egg/egg1.png">
+					<img onClick="onClick()" class=" egg egg-grass d-none" src="./img/dragons/grass/egg/egg1.png">
+					<img onClick="onClick()" class=" egg egg-ice d-none" src="./img/dragons/ice/egg/egg1.png">
+					<img onClick="onClick()" class="egg egg-psychic d-none" src="./img/dragons/psychic/egg/egg1.png">
+					<img onClick="onClick()" class="egg egg-water d-none" src="./img/dragons/water/egg/egg1.png">
 				</div>
-
-				<div class="indicator"></div>
 			</div>
 		</div>
 	</section>
@@ -313,6 +290,22 @@
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		var clicks = 0;
+		function onClick() {
+			clicks += 1;
+			document.getElementById("click").innerHTML = clicks;
+			var img = document.querySelector('.active-egg');
+			img.classList.remove('shake');
+			void img.offsetWidth;
+			img.classList.add('shake');
+
+			if (clicks === 1000) {
+				document.querySelector('#click').classList.add('d-none');
+				document.querySelector('.active-egg').classList.add('d-none');
+			}
+		};
+	</script>
 </body>
 
 </html>
