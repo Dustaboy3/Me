@@ -94,7 +94,7 @@ window.onload = function () {
 
     window.addEventListener('mousemove', function (event) {
         x = event.clientX - (window.innerWidth / 2);
-        if (typeof x !== 'undefined') {
+        if (typeof x !== 'undefined' && window.innerWidth > 1280) {
             mountainElectric.style.left = -x / 48 + "px";
             cloudsEletric.style.left = -x / 24 + "px";
             mountainFire.style.left = -x / 48 + "px";
