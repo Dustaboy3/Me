@@ -1,3 +1,8 @@
+:root {
+  touch-action: pan-x pan-y;
+  height: 100%
+}
+
 body {
   font-family: "Lucida Console", "Courier New", monospace;
   line-height: 21px;
@@ -137,6 +142,7 @@ body>section,
 
 .carousel-caption {
   top: 60%;
+  z-index: 102;
 }
 
 .carousel-caption h2 {
